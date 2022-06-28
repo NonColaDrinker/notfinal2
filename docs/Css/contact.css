@@ -1,0 +1,43 @@
+h2{
+text-align: center;
+font-size: 43px ;
+color: rgb(0, 0, 0);
+}
+
+*{
+  margin:2px;
+}
+body{
+  background-image: url(../images/background.webp);
+  background-position: center;
+ 
+  
+}
+.navbar{
+  text-align: right;
+ position: absolute;
+ right: 90px;
+ top:90px;
+ 
+}
+
+li{
+  display: inline-block;
+}
+.navbar a{
+ font-style:italic;
+	font-family:all;
+    color: rgb(0, 0, 0);
+  padding: 0.3cm 0.5cm;
+  font-size: 0.5cm;
+    background-color: rgb(255, 255, 255);
+  border: 1.5px solid #778899;
+  font-weight: bold;
+}
+.navbar a:hover{
+  border: 1.5px solid #6495ED;
+  padding: 0.4cm 0.7cm;
+  font-size: 0.4cm;
+    background-color: lightgrey;
+
+}

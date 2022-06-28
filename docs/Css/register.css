@@ -1,0 +1,16 @@
+*{
+  margin:2px;
+}
+body{
+  background-image: url(../images/background.webp);
+  background-position: center;
+}
+
+  h3{
+text-align: center;
+font-size: 43px ;
+color: rgb(0, 0, 0);
+position: absolute;
+margin-top: -60px;
+margin-left: 500px;
+}

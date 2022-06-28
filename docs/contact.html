@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<title>Contact</title>
+  <link rel="stylesheet" type="text/css" href="css/contact.css">
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 130%;
+  padding: 12px;
+  border: 1px solid #6495ED;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 5px 5px 5px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #6495ED;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+
+
+}
+
+input[type=submit]:hover {
+  background-color: #483D8B;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 40%;
+  margin-left: 380px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<h2>Contactez nous</h2> <br><br>
+
+<div class="navbar">
+                  <li><a href="index.html">Accueil</a></li>
+                    </div>
+<div  class="container">
+  <rm action="/action_page.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="nom">Nom</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="nom" name="nom" placeholder="Votre nom.." required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Prenom</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="prenom" name="prenom" placeholder="Votre prenom.." required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="wilaya">Wilaya</label>
+    </div>
+    <div class="col-75">
+      <select id="wilaya" name="wilaya">
+        <option value="Tizi Ouzou">Tizi Ouzou</option>
+        <option value="Alger">Alger</option>
+        <option value="Boumerdes">Boumerdes</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Sujet</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Ecrire quelque chose.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <input type="submit" value="Envoyer">
+  </div>
+  </form>
+</div>
+
+
+</body>
+</html>
+
+

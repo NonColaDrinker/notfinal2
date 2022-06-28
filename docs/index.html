@@ -1,0 +1,189 @@
+<html>
+<head>
+  <title>Sweet chique </title>
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" type="images/png" href="images/sweet.png">
+</head>
+<body>
+
+
+
+    <div class="grid-container">
+      <div class="colonnes colonne1"></div>
+      <div class="colonnes colonne2">
+          <div class="social_icon" style="width: 100%;">
+            <div class="container">
+              <div class="grid-icon-log">
+               
+                <div class="header_right">
+                  <div class="login_register_btn">
+                    <a href="connexion.html" class="btn btn-left">connexion</a>
+                    <a href="register.html" class="btn">Rejoignez la team !</a>
+                </div>
+              </div>
+            </div>
+          <div class="header">
+            <div class="container grid-header">
+              <div class="logo">
+                <a href="#"><img width="15px" src="images/sweet.png"></a>
+              </div>
+              <div class="navbar">
+                  <nav>
+                <ul>
+                  <li class="active"><a href="index.html">Accueil</a></li>
+  <div class="dropdown" >
+  <button class="dropbtn">Produits ▼</button>
+  <div class="dropdown-content">
+    <a href="sweathomme.html">TENDANCE HOMME</a>
+    <a href="sweatfemme.html">TENDANCE FEMME </a>
+ 
+  </div>
+</div>
+                    
+                  <li><a href="contact.html">Contacts</a></li>
+                
+                </ul>
+            </nav>
+              </div>
+            </div>
+          </div>
+          </div>
+
+         
+            <div class="mySlides">
+                  <img src="images/acceuil3.png" >
+                </div>
+           
+            
+              <div class="mySlides">
+                <img src="images/homme.jpg" >
+              </div>
+              
+              
+              <div class="mySlides">
+                <img src="images/homme2.jpg" >
+              </div>
+            <div id="global"></div>
+
+              <!--bouton suivant et precedent-->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+
+              <!-- Cercle-->
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+             </div>
+
+          <!--texte-->
+          <div class="texte">
+              <div class="tex">
+            <h2>Nos offres </h2> 
+             <h> du moment</h>  
+            </div>
+          </div>
+          <!--lesproduits-->
+          <div class="row">
+            <div class="colomn col1 ">
+            <div class="card">
+              <div class="placeimg">
+                <img src="../images/femme1.jpg" alt="">
+              </div>
+              <div class="placeinfo">
+                <h2>sweat unisexe </h2>
+                <h3> 9500 Da</h3>
+                <a href="#" class="card-btn">Ajouter au panier</a>
+              </div>
+            </div>
+            </div>
+            <div class="colomn col1 ">
+            <div class="card">
+              <div class="placeimg">
+                <img src="images/homme1.jpg" alt="">
+              </div>
+              <div class="placeinfo">
+                <h2>Sweat homme</h2>
+                <h3> 7000  Da</h3>
+                <a href="#" class="card-btn">Ajouter au panier</a>
+              </div>
+            </div>
+            </div>
+            <div class="colomn col1 ">
+            <div class="card">
+              <div class="placeimg">
+                <img src="images/femme2.jpg" alt="">
+              </div>
+              <div class="placeinfo">
+                <h2>Sweat Femme</h2>
+                <h3>8400 Da</h3>
+                <a href="#" class="card-btn">Ajouter au panier</a>
+              </div>
+            </div>
+            </div>
+          </div>
+          <!--<footer-->
+          <div class="footer">
+            <div class="section-left">
+              <div class="footer-logo">
+                <h2> Sweet & Chique</h2>
+                <a>            </a>  
+              </div>
+              <a href="#">Acceuil</a>
+              <a href="sweatfemme.html">TENDANCE FEMME</a>
+              <a href="sweathomme.html">TENDANCE HOMME </a>
+              <a href="contact.html">Contact</a>
+              <p>SWEET & CHIQUE Algerie Celebrate originality ,Un nom, une passion, une ambition..   .</p>
+              <div class="footer-icon">
+                <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" width="30px"></a>
+                <a href="https://instagram.com" target="_blank"><img src="images/insta.png" width="30px"></a>
+                <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" width="30px"></a>
+                <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.png" width="30px"></a>
+              </div>
+            </div>
+            <div class="section-right">
+              <form class="" action="index.html" method="post">
+                <label for="">Contact</label>
+                <div class="form-right">
+                  <input type="text" name="" id="e-mail" value="E-mail">
+                  <textarea name="name" rows="8"></textarea>
+                  
+                  <input type="submit"  name="" value="Envoyer" >
+
+                </div>
+                 </form>
+                   </div>
+          </div>
+      </div>
+    </div>
+    <div class="colonnes colonne3"></div>
+  </div>
+    <script type="text/javascript" scr="js/slide.js">
+      var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          }
+  </script>
+</body>
